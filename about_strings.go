@@ -3,8 +3,8 @@ package go_koans
 import "fmt"
 
 func aboutStrings() {
-	assert("a"+__string__ == "abc") // string concatenation need not be difficult
-	assert(len("abc") == __int__)   // and bounds are thoroughly checked
+	assert("a"+"bc"  == "abc") // string concatenation need not be difficult
+	assert(len("abc") == 3)   // and bounds are thoroughly checked
 
 	assert("abc"[0] == __byte__) // their contents are reminiscent of C
 
