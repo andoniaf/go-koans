@@ -6,12 +6,13 @@ func aboutStrings() {
 	assert("a"+"bc"  == "abc") // string concatenation need not be difficult
 	assert(len("abc") == 3)   // and bounds are thoroughly checked
 
-	assert("abc"[0] == __byte__) // their contents are reminiscent of C
+	assert("abc"[0] == 'a') // their contents are reminiscent of C
 
-	assert("smith"[2:] == __string__)  // slicing may omit the end point
-	assert("smith"[:4] == __string__)  // or the beginning
-	assert("smith"[2:4] == __string__) // or neither
-	assert("smith"[:] == __string__)   // or both
+	// https://golang.org/ref/spec#Slice_expressions
+	assert("smith"[2:] == "ith")  // slicing may omit the end point
+	assert("smith"[:4] == "smit")  // or the beginning
+	assert("smith"[2:4] == "it") // or neither
+	assert("smith"[:] == "smith")   // or both
 
 	assert("smith" == __string__) // they can be compared directly
 	assert("smith" < __string__)  // i suppose maybe this could be useful.. someday
