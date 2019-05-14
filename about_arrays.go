@@ -5,13 +5,13 @@ import "fmt"
 func aboutArrays() {
 	fruits := [4]string{"apple", "orange", "mango"}
 
-	assert(fruits[0] == __string__) // indexes begin at 0
-	assert(fruits[1] == __string__) // one is indeed the loneliest number
-	assert(fruits[2] == __string__) // it takes two to ...tango?
-	assert(fruits[3] == __string__) // there is no spoon, only an empty value
+	assert(fruits[0] == "apple") // indexes begin at 0
+	assert(fruits[1] == "orange") // one is indeed the loneliest number
+	assert(fruits[2] == "mango") // it takes two to ...tango?
+	assert(fruits[3] == "") // there is no spoon, only an empty value
 
-	assert(len(fruits) == __int__) // the length is what the length is
-	assert(cap(fruits) == __int__) // it can hold no more
+	assert(len(fruits) == 3) // the length is what the length is
+	assert(cap(fruits) == 4) // it can hold no more
 
 	assert(fruits == [4]string{}) // comparing arrays is not like comparing apples and oranges
 
